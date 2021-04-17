@@ -103,7 +103,7 @@ function createPeerConnection() {
     myPeerConnection = new RTCPeerConnection({
         iceServers: [     // Information about ICE servers - Use your own!
           {
-            urls: "stun:3.15.1.11:4000"
+            urls: "stun:stun.stunprotocol.org"
           }
         ]
     });
