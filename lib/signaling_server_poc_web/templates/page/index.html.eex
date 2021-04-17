@@ -1,0 +1,14 @@
+<div id="messages" role="log" aria-live="polite"></div>
+<input id="call-input" type="text"></input>
+
+<div>
+    My id: <span id="my-id"></span>
+    Contact id: <span id="contact"></span>
+    <button id="start-button" onclick="startCall();">Start call</button>
+</div>
+
+<div id="camera-container">
+    <video id="received-video" autoplay></video>
+    <video id="local-video" autoplay muted></video>
+    <button id="hangup-button" onclick="hangUpCall();" disabled>Hang up</button>
+</div>
