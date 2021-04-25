@@ -55,7 +55,7 @@ let socket = new Socket("/socket", {params: {token: window.userToken}})
 socket.connect()
 
 // Now that you are connected, you can join channels with a topic:
-export let channel = socket.channel("signal:join", {})
+export let channel = socket.channel("signal:relay", {})
 let callInput = document.querySelector("#call-input");
 let messagesContainer = document.querySelector("#messages");
 let contactContainer = document.querySelector("#contact");
